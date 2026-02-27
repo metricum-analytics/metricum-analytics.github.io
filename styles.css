@@ -108,26 +108,24 @@ p {
 /* Make the logo responsive */
 .hero img.logo {
   display: block;
-  width: 80%;        /* scales with the container */
+  width: 90%;        /* scales with the container */
   max-width: 1000px;  /* desktop max width */
   height: auto;      /* keep aspect ratio */
   margin: 0 auto;    /* center horizontally */
 }
 
-/* Mobile-specific adjustments */
+/* Mobile-specific logo adjustments */
 @media (max-width: 600px) {
-  .hero img.logo {
-    width: 80%;       /* shrink logo for small screens */
-    max-width: 400px; /* optional max for phones */
+  .logo {
+    max-width: 600px;   /* ensure logo stays visible on small screens */
+    min-width: 400px;   /* optional: keep it from shrinking too much */
   }
 
   .hero h1 {
-    font-size: 1.3em; /* shrink header text */
+    font-size: 1.5em;   /* shrink headline slightly */
   }
 
-  .hero .cta {
-    padding: 10px 14px; /* smaller button */
+  .cta {
+    padding: 10px 16px; /* smaller button */
   }
 }
-
-
