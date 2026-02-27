@@ -117,7 +117,7 @@ p {
 /* Mobile-specific adjustments */
 @media (max-width: 600px) {
   .hero img.logo {
-    width: 60%;       /* shrink logo for small screens */
+    width: 80%;       /* shrink logo for small screens */
     max-width: 400px; /* optional max for phones */
   }
 
@@ -129,4 +129,5 @@ p {
     padding: 10px 14px; /* smaller button */
   }
 }
+
 
