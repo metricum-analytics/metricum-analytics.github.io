@@ -105,26 +105,27 @@ p {
 
 }
 
-/* Hero header logo */
-header .logo {
+/* Make the logo responsive */
+.hero img.logo {
   display: block;
-  margin: 0 auto;       /* centers the logo */
-  width: 100%;           /* make it scale with container */
-  max-width: 300px;      /* desktop max width */
-  height: auto;          /* maintain aspect ratio */
+  width: 80%;        /* scales with the container */
+  max-width: 1000px;  /* desktop max width */
+  height: auto;      /* keep aspect ratio */
+  margin: 0 auto;    /* center horizontally */
 }
 
-/* Adjust hero padding on mobile if needed */
+/* Mobile-specific adjustments */
 @media (max-width: 600px) {
-  header .logo {
-    max-width: 180px;   /* smaller on smartphones */
+  .hero img.logo {
+    width: 60%;       /* shrink logo for small screens */
+    max-width: 180px; /* optional max for phones */
   }
 
   .hero h1 {
-    font-size: 1.5em;   /* reduce heading size */
+    font-size: 1.3em; /* shrink header text */
   }
 
-  .cta {
-    padding: 10px 16px; /* smaller button */
+  .hero .cta {
+    padding: 10px 14px; /* smaller button */
   }
 }
