@@ -105,29 +105,25 @@ p {
 
 }
 
-/* Make logo responsive */
-header .logo {
-  max-width: 200px;     /* limits width */
-  height: auto;         /* maintains aspect ratio */
-  margin: 0 auto;
-  display: block;
+/* Hero header */
+.hero {
+  background: #0f172a url('./images/hero-background.png') no-repeat center center;
+  background-size: cover;      /* ensures image covers the header */
+  color: white;
+  text-align: center;
+  padding: 100px 20px;         /* default desktop padding */
 }
 
-/* Optional: adjust further for small screens */
+/* Adjust for mobile */
 @media (max-width: 600px) {
-  header .logo {
-    max-width: 140px;   /* smaller logo on mobile */
-  }
-
   .hero {
-    padding: 60px 20px; /* reduce vertical padding on small screens */
+    padding: 60px 20px;        /* reduce vertical padding */
   }
 
   .hero h1 {
-    font-size: 1.5em;   /* smaller heading */
+    font-size: 1.5em;          /* smaller heading */
   }
 
   .cta {
-    padding: 10px 16px; /* slightly smaller button */
+    padding: 10px 16px;        /* smaller button */
   }
-}
