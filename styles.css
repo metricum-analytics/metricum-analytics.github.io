@@ -102,4 +102,32 @@ p {
   flex: 1 1 280px;
   max-width: 300px;
   text-align: center;
+
+}
+
+/* Make logo responsive */
+header .logo {
+  max-width: 200px;     /* limits width */
+  height: auto;         /* maintains aspect ratio */
+  margin: 0 auto;
+  display: block;
+}
+
+/* Optional: adjust further for small screens */
+@media (max-width: 600px) {
+  header .logo {
+    max-width: 140px;   /* smaller logo on mobile */
+  }
+
+  .hero {
+    padding: 60px 20px; /* reduce vertical padding on small screens */
+  }
+
+  .hero h1 {
+    font-size: 1.5em;   /* smaller heading */
+  }
+
+  .cta {
+    padding: 10px 16px; /* slightly smaller button */
+  }
 }
