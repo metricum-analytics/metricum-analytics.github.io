@@ -105,25 +105,26 @@ p {
 
 }
 
-/* Hero header */
-.hero {
-  background: #0f172a url('./images/hero-background.png') no-repeat center center;
-  background-size: cover;      /* ensures image covers the header */
-  color: white;
-  text-align: center;
-  padding: 100px 20px;         /* default desktop padding */
+/* Logo in hero header */
+header .logo {
+  display: block;
+  margin: 0 auto;       /* centers the logo */
+  width: auto;          /* maintain aspect ratio */
+  max-width: 300px;     /* desktop max width */
+  height: auto;         /* scale height automatically */
 }
 
-/* Adjust for mobile */
+/* Mobile adjustment */
 @media (max-width: 600px) {
-  .hero {
-    padding: 60px 20px;        /* reduce vertical padding */
+  header .logo {
+    max-width: 180px;   /* shrink logo for smartphones */
   }
 
   .hero h1 {
-    font-size: 1.5em;          /* smaller heading */
+    font-size: 1.5em;   /* smaller heading on mobile */
   }
 
   .cta {
-    padding: 10px 16px;        /* smaller button */
+    padding: 10px 16px; /* smaller button */
   }
+}
