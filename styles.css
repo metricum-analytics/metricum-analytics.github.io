@@ -118,7 +118,7 @@ p {
 @media (max-width: 600px) {
   .hero img.logo {
     width: 60%;       /* shrink logo for small screens */
-    max-width: 180px; /* optional max for phones */
+    max-width: 400px; /* optional max for phones */
   }
 
   .hero h1 {
@@ -129,3 +129,4 @@ p {
     padding: 10px 14px; /* smaller button */
   }
 }
+
