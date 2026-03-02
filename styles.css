@@ -40,12 +40,11 @@ h1, h2 {
 }
 
 .cta:hover {
-  background: #1d4ed8; /* slightly darker on hover */
+  background: #1d4ed8;
   color: white;
 }
 
-/* Footer */
-/* Footer */
+/* Footer (unchanged) */
 footer {
   text-align: center;
   color: #1f2933;
@@ -56,7 +55,7 @@ footer {
 
 footer p {
   margin: 5px 0;
-  text-align: center; /* force centering inside footer */
+  text-align: center;
 }
 
 footer a {
@@ -85,12 +84,12 @@ p {
   text-align: justify;
 }
 
-/* Optional: add a little spacing for the about-container */
+/* About spacing */
 .about-container {
   margin-top: 20px;
 }
 
-/* Optional: make mock cards consistent */
+/* Mock cards */
 .mock-cards {
   display: flex;
   flex-wrap: wrap;
@@ -102,28 +101,48 @@ p {
   flex: 1 1 280px;
   max-width: 300px;
   text-align: center;
-
 }
 
-/* Make the logo responsive */
-.logo {
-  max-width: 100%;
-  height: auto;
+/* =========================
+   HEADER LOGO BEHAVIOUR
+   ========================= */
+
+/* Max 1000px, otherwise scale with container */
+.hero img.logo {
   display: block;
-  margin: 0 auto;  /* center */
+  width: min(100%, 1000px);
+  height: auto;
+  margin: 0 auto;
 }
 
-/* Mobile-specific */
+/* =========================
+   FIGURE IMAGE BEHAVIOUR
+   ========================= */
+
+/* Container just centres */
+.figure {
+  text-align: center;
+}
+
+/* Max 800px, otherwise scale down proportionally */
+.figure img {
+  display: block;
+  width: min(100%, 800px);
+  height: auto;
+  margin: 0 auto;
+  cursor: zoom-in; /* indicates click */
+}
+
+/* =========================
+   MOBILE TYPOGRAPHY ONLY
+   ========================= */
+
 @media (max-width: 600px) {
-  .logo {
-    max-width: 80%;  /* fill ~80% of screen width */
-  }
-
   .hero h1 {
-    font-size: 1.5em;   /* adjust headline size for small screens */
+    font-size: 1.3em;
   }
 
-  .cta {
-    padding: 10px 16px; /* smaller button for mobile */
+  .hero .cta {
+    padding: 10px 14px;
   }
 }
